@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97B1531E1DD4D67A003BE0D4 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B1531D1DD4D67A003BE0D4 /* play.png */; };
 		FAE473601D162BDC0019496A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4735F1D162BDC0019496A /* AppDelegate.swift */; };
 		FAE473621D162BDC0019496A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FAE473611D162BDC0019496A /* GameScene.sks */; };
 		FAE473641D162BDC0019496A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE473631D162BDC0019496A /* GameScene.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97B1531D1DD4D67A003BE0D4 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		FAE4735C1D162BDB0019496A /* Whack-a-Penguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whack-a-Penguin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE4735F1D162BDC0019496A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE473611D162BDC0019496A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		FAE473751D162CFF0019496A /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				97B1531D1DD4D67A003BE0D4 /* play.png */,
 				FAE473761D162CFF0019496A /* gameOver.png */,
 				FAE473771D162CFF0019496A /* gameOver@2x.png */,
 				FAE473781D162CFF0019496A /* penguinEvil.png */,
@@ -198,6 +201,7 @@
 				FAE4736B1D162BDC0019496A /* Assets.xcassets in Resources */,
 				FAE473881D162CFF0019496A /* penguinEvil@2x.png in Resources */,
 				FAE473871D162CFF0019496A /* penguinEvil.png in Resources */,
+				97B1531E1DD4D67A003BE0D4 /* play.png in Resources */,
 				FAE473691D162BDC0019496A /* Main.storyboard in Resources */,
 				FAE473921D162CFF0019496A /* whackMask@2x.png in Resources */,
 				FAE4738B1D162CFF0019496A /* whack.caf in Resources */,

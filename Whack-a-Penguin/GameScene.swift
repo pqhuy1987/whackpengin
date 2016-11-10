@@ -25,6 +25,9 @@ class GameScene: SKScene {
         }
     }
     
+    var playButton = SKSpriteNode()
+    let playButtonTex = SKTexture(imageNamed: "play")
+    
     /*
      * Function Name: didMoveToView
      * Parameters: view - the view that called this method.
@@ -80,7 +83,7 @@ class GameScene: SKScene {
                     if whackSlot.isHit { continue }
                     
                     whackSlot.hit()
-                    score -= 5
+                    score -= 3
                     
                     run(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion:false))
                 }
@@ -97,6 +100,12 @@ class GameScene: SKScene {
                     score += 1
                     
                     run(SKAction.playSoundFileNamed("whack.caf", waitForCompletion:false))
+                }
+                else if node == playButton {
+                    let gameScene:GameScene = GameScene(size: self.view!.bounds.size) // create your new scene
+                    let transition = SKTransition.fade(withDuration: 1.0) // create type of transition (you can check in documentation for more transtions)
+                    gameScene.scaleMode = SKSceneScaleMode.fill
+                    self.view!.presentScene(gameScene, transition: transition)
                 }
             }
         }
@@ -141,6 +150,10 @@ class GameScene: SKScene {
             gameOver.position = CGPoint(x: 512, y: 384)
             gameOver.zPosition = 1
             addChild(gameOver)
+            
+            playButton = SKSpriteNode(texture: playButtonTex)
+            playButton.position = CGPoint(x: frame.maxX - 60, y: frame.maxY - 60)
+            self.addChild(playButton)
             
             return
         }
